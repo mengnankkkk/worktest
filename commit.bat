@@ -11,7 +11,7 @@ REM 切换到 Git 仓库目录
 cd /D %repo_path%
 
 REM 添加所有更改到暂存区
-git add --all :/
+git add --all .
 
 REM 提交更改到 main 分支
 git commit -m "update"
@@ -22,4 +22,5 @@ git push origin main
 REM 显示完成消息
 echo "更改已提交到 main 分支"
 pause
+
 
