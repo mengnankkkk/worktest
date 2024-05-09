@@ -1,93 +1,17 @@
-![logo](static-files/my-bbs-logo.png)
+在原神与《欧陆风云》中大明的故事，可以通过将原神世界与《欧陆风云》中的角色和背景进行交织，创造出一段跨界的故事。
 
-**坚持不易，各位朋友如果觉得项目还不错的话可以给项目一个 star 吧，也是对我一直更新代码的一种鼓励啦，谢谢各位的支持。**
+---
 
-My BBS 是由 SpringBoot + Mybatis + Thymeleaf 等技术实现的 Java 论坛系统，页面美观、功能齐全、部署简单及完善的代码，一定会给学习者和使用者带来极大的帮助。
+在原神的世界中，一个名叫大明的冒险家听说了一个传说：在蒙德大陆的某个偏远角落，隐藏着一座神秘的古城，据说这座城市中寻常人无法进入，只有拥有特殊力量的冒险者才能探索它的秘密。大明对冒险的渴望驱使着他，决定踏上这段充满未知的旅程。
 
-当前分支的 Spring Boot 版本为 2.4.0，想要学习和使用其它版本可以直接点击下方的分支名称跳转至对应的仓库分支中。
+穿过古老的森林，跨越荒凉的山脉，大明终于来到了传说中的古城。城市的入口被一道神秘的屏障挡住，普通的方法无法突破。正当大明束手无策之际，一位身着华丽铠甲的剑士突然出现在他面前。这位剑士名叫费迪南，是《欧陆风云》中的一名著名战士，他也在寻找这座古城。
 
-| 分支名称                                                    | Spring Boot Version |
-| ------------------------------------------------------------ | ------------------- |
-| [spring-boot-3.x](https://github.com/ZHENFENG13/My-BBS/tree/spring-boot-3.x) | 3.1.0       |
-| [main](https://github.com/ZHENFENG13/My-BBS)            | 2.4.0               |
+费迪南告诉大明，古城中封印着一种神秘力量，这种力量足以改变世界的格局。两人决定联手合作，共同突破屏障，探索古城的奥秘。
 
-- **一个以 Spring Boot 技术栈实现的 BBS 论坛实战项目；**
-- **你也可以把它作为 Spring Boot 技术栈的学习项目，My BBS 足够符合要求，且代码和功能完备；**
-- **技术栈新颖且知识点丰富，学习后可以提升大家对于知识的理解和掌握，对于提升你的市场竞争力有一定的帮助。**
-- **My BBS 还有一些不完善的地方，鄙人才疏学浅，望见谅；**
-- **有任何问题都可以反馈给我，我会尽量完善该项目。**
+他们面对着重重难关，遇到了许多困难和危险。但是在团结合作下，他们克服了一切挑战，终于进入了古城的核心区域。在那里，他们发现了一块神秘的巨石，散发着强大的能量。然而，当他们试图触摸巨石时，突然传来一阵强烈的光芒，两人眼前一黑，失去了意识。
 
-> 更多 Spring Boot 实战项目可以关注十三的另一个代码仓库 [spring-boot-projects](https://github.com/ZHENFENG13/spring-boot-projects)，该仓库中主要是 Spring Boot 的入门学习教程以及一些常用的 Spring Boot 实战项目教程，包括 Spring Boot 使用的各种示例代码，同时也包括一些实战项目的项目源码和效果展示，实战项目包括基本的 web 开发以及目前大家普遍使用的前后端分离实践项目等，后续会根据大家的反馈继续增加一些实战项目源码，摆脱各种 hello world 入门案例的束缚，真正的掌握 Spring Boot 开发。
+当大明和费迪南醒来时，他们发现自己置身于《欧陆风云》的大明帝国之中。原来，古城中的力量将他们传送到了一个全新的世界。现在，他们必须在这个陌生的大明世界中寻找归途，并解开这段跨越次元的神秘之旅的真相。
 
-## 开发文档
+在大明世界中，大明和费迪南经历了种种奇遇与挑战，结识了许多新朋友，与强大的敌人展开了激烈的战斗。最终，他们发现了回到原神世界的方法，但在返回之前，他们决定留在大明世界，继续探索未知的奥秘，保护这个充满传奇与冒险的世界。
 
-### 《SpringBoot + Mybatis + Thymeleaf 开发 BBS 论坛项目》(支付减免优惠券码 jRPuZHPz )
-
-[![lesson-11](https://newbee-mall.oss-cn-beijing.aliyuncs.com/poster/store/lesson-11.png)](https://www.shiyanlou.com/courses/4830)
-
-- [**第01课：Spring Boot 技术栈详解**](https://www.shiyanlou.com/courses/4830)
-- [第02课：快速构建 Spring Boot 应用](https://www.shiyanlou.com/courses/4830)
-- [第03课：Spring Boot 项目开发之Web项目开发讲解](https://www.shiyanlou.com/courses/4830)
-- [第04课：Spring Boot 整合 Thymeleaf 模板引擎](https://www.shiyanlou.com/courses/4830)
-- [第05课：Thymeleaf 语法详解](https://www.shiyanlou.com/courses/4830)
-- [第06课：Spring Boot 自动配置数据源及操作数据库](https://www.shiyanlou.com/courses/4830)
-- [第07课：Spring Boot 整合 MyBatis 操作数据库](https://www.shiyanlou.com/courses/4830)
-- [第08课：分页功能的设计与实现](https://www.shiyanlou.com/courses/4830)
-- [第09课：BBS论坛项目开发之验证码功能](https://www.shiyanlou.com/courses/4830)
-- [第10课：BBS论坛项目开发之前端技术选型及源码目录详解](https://www.shiyanlou.com/courses/4830)
-- [第11课：BBS论坛项目开发之用户注册模块实现](https://www.shiyanlou.com/courses/4830)
-- [第12课：BBS论坛项目开发之用户登录模块实现](https://www.shiyanlou.com/courses/4830)
-- [第13课：BBS论坛项目开发之用户登录拦截器](https://www.shiyanlou.com/courses/4830)
-- [第14课：BBS论坛项目实战之处理文件上传及路径回显](https://www.shiyanlou.com/courses/4830)
-- [第15课：BBS论坛项目实战之个人中心页面制作](https://www.shiyanlou.com/courses/4830)
-- [第16课：富文本编辑器 wangEditor 整合](https://www.shiyanlou.com/courses/4830)
-- [第17课：BBS论坛项目实战之论坛首页开发](https://www.shiyanlou.com/courses/4830)
-- [第18课：BBS论坛项目实战之帖子发布功能开发](https://www.shiyanlou.com/courses/4830)
-- [第19课：BBS论坛项目实战之帖子详情和修改功能开发](https://www.shiyanlou.com/courses/4830)
-- [第20课：BBS论坛项目实战之评论功能开发](https://www.shiyanlou.com/courses/4830)
-
-## 联系作者
-
-> 大家有任何问题或者建议都可以在 [issues](https://github.com/ZHENFENG13/My-BBS/issues) 中反馈给我，我会慢慢完善这个项目。
-
-- 我的邮箱：2449207463@qq.com
-- QQ技术交流群：719099151 796794009
-
-> My-BBS 在 GitHub 和国内的码云都创建了代码仓库，如果有人访问 GitHub 比较慢的话，建议在 Gitee 上查看该项目，两个仓库会保持同步更新。
-
-- [My-BBS in GitHub](https://github.com/ZHENFENG13/My-BBS)
-- [My-BBS in Gitee](https://gitee.com/zhenfeng13/My-BBS)
-
-## 效果预览
-
-- 首页
-
-  ![首页](static-files/首页.png)
-
-- 登录
-
-  ![登录](static-files/登录.png)
-
-- 用户中心
-
-  ![用户中心](static-files/用户中心.png)
-  
-- 用户动态
-
-  ![用户动态](static-files/用户动态.png)
-
-- 发布帖子
-
-  ![发布帖子](static-files/发布帖子.png)
-
-- 帖子详情
-
-  ![帖子详情](static-files/帖子详情.png)
-
-## 感谢
-
-- [spring-projects](https://github.com/spring-projects/spring-boot)
-- [pandao](https://github.com/pandao/editor.md)
-- [fly](https://github.com/layui/fly)
-- [layui](https://www.layui.com/)
-
+这就是大明与原神世界相遇的故事，一段跨越次元的冒险之旅，充满了惊险、刺激和不可思议的奇迹。
