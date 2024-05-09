@@ -39,10 +39,12 @@ CREATE TABLE `tb_bbs_user` (
                                `location` varchar(4) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '居住地',
                                `introduce` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '个人简介',
                                `user_status` tinyint NOT NULL DEFAULT '0' COMMENT '用户状态 0=正常 1=禁言',
+                               `role` tinyint NOT NULL DEFAULT '0' COMMENT '用户角色 0=普通用户 1=管理员',
                                `last_login_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '最新登录时间',
                                `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '注册时间',
                                PRIMARY KEY (`user_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='论坛用户表';
+
 
 /*Data for the table `tb_bbs_user` */
 
