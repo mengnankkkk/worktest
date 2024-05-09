@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- MyBatis Generator 配置文件的根节点 -->
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        
+        <!-- 数据库连接配置 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                connectionURL="jdbc:mysql://localhost:3306/my_bbs_db?serverTimezone=UTC"
+                userId="mengnankk"
+                password="Zyk2215290444">
+        </jdbcConnection>
+
+
+        <!-- 默认为false，表示不进行数据库自动识别 -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!-- 生成模型的包名和位置 -->
+        <javaModelGenerator targetPackage="com.my.bbs"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- 生成映射文件的包名和位置 -->
+        <sqlMapGenerator targetPackage="com.my.bbs"
+                         targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- 生成DAO接口的包名和位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.my.bbs"
+                             targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!-- 指定要生成的表及对应的实体类 -->
+        <table tableName="tb_bbs_user" domainObjectName="my_bbs_db"/>
+        <!-- 可以添加更多的 <table> 节点来指定多个表 -->
+        <table tableName="tb_bbs_post" domainObjectName="my_bbs_db"/>
+
+    </context>
+</generatorConfiguration>
