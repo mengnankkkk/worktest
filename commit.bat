@@ -2,11 +2,8 @@
 REM 提交更改到 main 分支的批处理文件
 
 REM 设置 Git 仓库路径
-<<<<<<< HEAD
 set repo_path=D:\Uploading
-=======
-set repo_path=D:\new
->>>>>>> 1d1a94503a6f00c957839e9751fc9824a973e5ee
+REM set repo_path = D:\new
 
 REM 添加例外规则，允许当前用户对该目录进行 Git 操作
 git config --global --add safe.directory %repo_path%
