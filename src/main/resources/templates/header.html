@@ -3,6 +3,7 @@
 <head th:fragment="head-fragment(title)">
     <meta charset="utf-8">
     <title th:text="${title}">首页</title>
+    <link rel="shortcut icon" th:href="@{/images/my-bbs-icon.png}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="My-BBS,bbs,论坛,SpringBoot论坛,论坛系统,Java论坛,SpringBoot,spring-boot,java">
     <meta name="description" content="My BBS 是由 SpringBoot + Mybatis + Thymeleaf 等技术实现的 Java BBS论坛系统">
@@ -13,7 +14,7 @@
 <div th:fragment="header-fragment" class="fly-header layui-bg-black">
     <div class="layui-container">
         <a class="fly-logo" href="/">
-
+            <img th:src="@{/images/my-bbs-logo.png}" alt="My-BBS">
         </a>
         <ul class="layui-nav fly-nav layui-hide-xs">
             <li class="layui-nav-item layui-this">
