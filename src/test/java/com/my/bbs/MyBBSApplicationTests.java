@@ -31,5 +31,6 @@ class MyBBSApplicationTests {
 		System.out.println(PatternUtil.isEmail("1034683568@sina.cn"));
 		System.out.println(PatternUtil.isEmail("1034683568@163"));
 		System.out.println(PatternUtil.isEmail("@163.com"));
+		System.out.println(PatternUtil.isEmail("m5231773@gmail.com"));
 	}
 }
