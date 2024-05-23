@@ -3,14 +3,7 @@ package com.my.bbs.util;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * 正则工具类
- *
- * @author 13
- * @qq交流群 719099151
- * @email 2449207463@qq.com
- * @link https://github.com/ZHENFENG13/My-BBS
- */
+
 public class PatternUtil {
 
     /**

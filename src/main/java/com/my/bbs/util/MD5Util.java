@@ -2,12 +2,7 @@ package com.my.bbs.util;
 
 import java.security.MessageDigest;
 
-/**
- * @author 13
- * @qq交流群 719099151
- * @email 2449207463@qq.com
- * @link https://github.com/ZHENFENG13/My-BBS
- */
+
 public class MD5Util {
 
     private static String byteArrayToHexString(byte b[]) {

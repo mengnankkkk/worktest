@@ -15,14 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * My-BBS系统身份验证拦截器
- *
- * @author 13
- * @qq交流群 719099151
- * @email 2449207463@qq.com
- * @link https://github.com/ZHENFENG13/My-BBS
- */
+
 @Component
 public class MyBBSLoginInterceptor implements HandlerInterceptor {
 

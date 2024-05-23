@@ -7,11 +7,7 @@
  */
 package com.my.bbs.common;
 
-/**
- * @author 13
- * @qq交流群 719099151
- * @email 2449207463@qq.com
- */
+
 public enum ServiceResultEnum {
     ERROR("error"),
 
