@@ -1,7 +1,7 @@
 package com.my.bbs.entity;
 
 import java.util.Date;
-
+//内容支持模块
 /**
  * 评论列表-实体类
  * 页面展示时需要的字段与评论实体类不同，因此新增了这个类

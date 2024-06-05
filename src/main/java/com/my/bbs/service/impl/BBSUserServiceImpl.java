@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.List;
-
+//用户管理模
 @Service
 public class BBSUserServiceImpl implements BBSUserService {
 

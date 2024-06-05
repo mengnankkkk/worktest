@@ -11,7 +11,7 @@ import com.my.bbs.entity.BBSUser;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
-
+//用户管理模块
 public interface BBSUserService {
 
     /**

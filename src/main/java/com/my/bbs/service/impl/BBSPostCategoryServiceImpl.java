@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+//帖子管理模块
 @Service
 public class BBSPostCategoryServiceImpl implements BBSPostCategoryService {
 

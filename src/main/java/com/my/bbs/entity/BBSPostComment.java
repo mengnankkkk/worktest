@@ -1,7 +1,7 @@
 package com.my.bbs.entity;
 
 import java.util.Date;
-
+//内容支持模块
 /**
  * 评论-实体类
  */

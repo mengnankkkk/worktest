@@ -3,7 +3,7 @@ package com.my.bbs.dao;
 import com.my.bbs.entity.BBSPostCategory;
 
 import java.util.List;
-
+//数据库
 public interface BBSPostCategoryMapper {
     int deleteByPrimaryKey(Integer categoryId);
 

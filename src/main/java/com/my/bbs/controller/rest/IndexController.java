@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+//内容支持模块或帖子post模块
 @Controller
 public class IndexController {
 

@@ -1,7 +1,7 @@
 package com.my.bbs.entity;
 
 import java.util.Date;
-
+//用户管理模块
 /**
  * 论坛用户-实体类
  */

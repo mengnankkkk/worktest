@@ -3,7 +3,7 @@ package com.my.bbs.util;
 import java.io.Serializable;
 import java.util.List;
 
-
+//内容支持模块
 public class PageResult implements Serializable {
 
     //总记录数

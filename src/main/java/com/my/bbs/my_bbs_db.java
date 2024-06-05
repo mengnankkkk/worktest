@@ -1,7 +1,7 @@
 package com.my.bbs;
 
 import java.util.Date;
-
+//数据库
 public class my_bbs_db {
     /**
      *

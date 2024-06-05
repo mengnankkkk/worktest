@@ -10,7 +10,7 @@ package com.my.bbs.service;
 import com.my.bbs.entity.BBSPost;
 
 import java.util.List;
-
+//帖子管理模块
 public interface BBSPostCollectService {
 
     /**

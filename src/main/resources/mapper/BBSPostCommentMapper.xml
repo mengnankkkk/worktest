@@ -1,3 +1,6 @@
+<!--
+  帖子评论（Post Comment）相关的数据库操作，因此它应该属于与帖子相关的模块。在给定的选项中，最符合的是帖子管理模块或内容支持模块
+-->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.my.bbs.dao.BBSPostCommentMapper">

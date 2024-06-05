@@ -1,7 +1,7 @@
 package com.my.bbs.entity;
 
 import java.util.Date;
-
+//帖子post模块或内容支持模块
 /**
  * 帖子-实体类
  */

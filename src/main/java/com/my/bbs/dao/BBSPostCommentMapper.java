@@ -6,7 +6,7 @@ import com.my.bbs.util.PageQueryUtil;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-
+//帖子post模块
 public interface BBSPostCommentMapper {
     int deleteByPrimaryKey(Long commentId);
 

@@ -14,7 +14,7 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
+//用户管理模块
 @Service
 public class BBSPostCollectServiceImpl implements BBSPostCollectService {
 

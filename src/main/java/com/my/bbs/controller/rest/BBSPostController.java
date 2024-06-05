@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.List;
-
+//帖子post模块
 @Controller
 public class BBSPostController {
     @Resource

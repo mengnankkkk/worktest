@@ -8,7 +8,7 @@ import org.springframework.beans.PropertyAccessorFactory;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Field;
 import java.util.*;
-
+//内容支持模块
 public abstract class BeanUtil {
 
     public static Object copyProperties(Object source, Object target, String... ignoreProperties) {

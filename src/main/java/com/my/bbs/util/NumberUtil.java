@@ -3,7 +3,7 @@ package com.my.bbs.util;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
+//内容支持模块
 public class NumberUtil {
 
     private NumberUtil() {

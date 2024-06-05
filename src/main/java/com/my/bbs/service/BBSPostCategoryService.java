@@ -10,7 +10,7 @@ package com.my.bbs.service;
 import com.my.bbs.entity.BBSPostCategory;
 
 import java.util.List;
-
+//帖子post模块
 public interface BBSPostCategoryService {
     /**
      * 获取分类列表

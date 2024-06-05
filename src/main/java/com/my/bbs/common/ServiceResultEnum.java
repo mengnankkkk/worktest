@@ -7,7 +7,7 @@
  */
 package com.my.bbs.common;
 
-
+//公共枚举（Common Enumeration）模块或服务响应枚举（Service Response Enumeration）模块
 public enum ServiceResultEnum {
     ERROR("error"),
 

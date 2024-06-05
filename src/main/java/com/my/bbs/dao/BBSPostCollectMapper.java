@@ -4,7 +4,7 @@ import com.my.bbs.entity.BBSPostCollect;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-
+//用户管理模块
 public interface BBSPostCollectMapper {
     int deleteByPrimaryKey(Long recordId);
 

@@ -3,7 +3,7 @@ package com.my.bbs.util;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-
+//内容支持模块
 public class PageQueryUtil extends LinkedHashMap<String, Object> {
     //当前页码
     private int page;

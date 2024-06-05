@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
-
+//帖子管理模块
 @Controller
 public class BBSPostCollectController {
 

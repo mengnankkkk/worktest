@@ -6,7 +6,7 @@ import java.math.BigInteger;
 import java.net.URI;
 import java.security.MessageDigest;
 
-
+//安全
 public class SystemUtil {
 
     private SystemUtil() {

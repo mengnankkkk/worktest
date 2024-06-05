@@ -2,7 +2,7 @@ package com.my.bbs.util;
 
 import java.io.Serializable;
 
-
+//内容支持模块
 public class Result<T> implements Serializable {
     private static final long serialVersionUID = 1L;
     private int resultCode;

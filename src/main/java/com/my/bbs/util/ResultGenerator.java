@@ -2,7 +2,7 @@ package com.my.bbs.util;
 
 import org.springframework.util.StringUtils;
 
-
+//内容支持模块
 public class ResultGenerator {
     private static final String DEFAULT_SUCCESS_MESSAGE = "SUCCESS";
     private static final String DEFAULT_FAIL_MESSAGE = "FAIL";

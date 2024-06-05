@@ -13,7 +13,7 @@ import com.my.bbs.util.PageQueryUtil;
 import com.my.bbs.util.PageResult;
 
 import java.util.List;
-
+//帖子post模块
 public interface BBSPostCommentService {
 
     /**

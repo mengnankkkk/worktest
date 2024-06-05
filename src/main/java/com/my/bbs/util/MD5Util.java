@@ -1,7 +1,7 @@
 package com.my.bbs.util;
 
 import java.security.MessageDigest;
-
+//安全
 
 public class MD5Util {
 
