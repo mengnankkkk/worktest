@@ -18,31 +18,33 @@
 
 在这段冒险的旅程中，宵宫、玛露希尔、东山小红、阿尔图罗、川井璃夏和维什戴尔等勇士们展现了无畏的勇气和坚韧不拔的意志，成为了各自领域的英雄，他们的传说将永远被铭记于世。
 
-| 模块名称 | 模块负责 |
-|------|------|
-|      |      |
+mengnankkkk：
 
-数据库   mengnankkkk
+    数据库   
 
-github管理模块    mengnankkkk
+    github管理模块
 
-blog   mengnankkkk
+    blog 
 
-安全   mengnankkk
+    安全 
 
-前端   Margit-Arachne
+Margit-Arachne：
 
-用户管理模块   Margit-Arachne
+    前端   
 
-编码crypot模块   Margit-Arachne
+    用户管理模块   
 
-帖子post模块   yaoplayer
+    编码crypot模块  
 
-帖子管理模块   yaoplayer
+yaoplayer：
 
-内容支持模块   yaoplayer
+    帖子post模块   
 
-创意模块   yaoplayer
+    帖子管理模块  
+
+    内容支持模块   
+
+    创意模块   
 
 博客地址：https://mengnankk.top/
 
