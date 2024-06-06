@@ -1,4 +1,4 @@
-![logo](static-files/my-bbs-logo.png)
+﻿﻿![logo](static-files/my-bbs-logo.png)
 
 在一个神秘的世界中，宵宫、玛露希尔、东山小红、阿尔图罗、川井璃夏和维什戴尔等来自不同领域的勇士们相遇了。他们被命运之手引导，踏上了一场跨越欧陆风云4中的大明以及其他领域的奇幻冒险之旅。
 
@@ -18,6 +18,7 @@
 
 在这段冒险的旅程中，宵宫、玛露希尔、东山小红、阿尔图罗、川井璃夏和维什戴尔等勇士们展现了无畏的勇气和坚韧不拔的意志，成为了各自领域的英雄，他们的传说将永远被铭记于世。
 
+<<<<<<< HEAD
 mengnankkkk：
 
     数据库   
@@ -47,6 +48,15 @@ yaoplayer：
     创意模块   
 
 博客地址：https://mengnankk.top/
+=======
+项目博客地址：https://mengnankk.top/2024/06/06/webbbs/
+
+Xcheck检测链接：https://xcheck.tencent.com/taskshare/78c8be97-ace0-429a-8eff-444567691d36
+
+演示视频地址：
+
+主要功能截图：
+>>>>>>> 45e35ced5f1540fd5c5503c4f97ba0849340333d
 
 
 
