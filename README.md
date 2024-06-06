@@ -24,11 +24,13 @@
 
 数据库   mengnankkkk
 
-前端   Margit-Arachne
+github管理模块    mengnankkkk
 
 blog   mengnankkkk
 
 安全   mengnankkk
+
+前端   Margit-Arachne
 
 用户管理模块   Margit-Arachne
 
@@ -39,8 +41,6 @@ blog   mengnankkkk
 帖子管理模块   yaoplayer
 
 内容支持模块   yaoplayer
-
-github管理模块    mengnankkkk
 
 创意模块   yaoplayer
 
