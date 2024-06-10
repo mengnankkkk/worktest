@@ -1,23 +1,33 @@
 /*! 默认风格 */
 
-html body{margin-top:0; margin-left: 136px;}
-html .fly-full{margin-top: 0;}
+html body{margin-top:0; margin-left: 136px;}/* 设置整个页面的外边距 */
+html .fly-full{margin-top: 0;} /* 取消顶部外边距 */
 
-.main{width:auto; margin:15px 24px 15px 24px;}
-.content{margin-right: 360px;}
-.jie-row li .jie-title{max-width:70%;}
+.main{width:auto; margin:15px 24px 15px 24px;} /*设置主容器的宽度和外边距*/
+.content{margin-right: 360px;} /* 设置内容区域的右外边距 */
+.jie-row li .jie-title{max-width:70%;} /* 限制标题的最大宽度 */
 
 /* 头部 */
-.header{width:136px; height:100%;}
-.header .main{position: static; width:auto;}
-.logo{top:20px; left:50%; width:86px; height:74px; margin-left:-43px; background:url(../images/logo-1.png);}
-.nav{position:relative; left:0; top:110px; border-top:1px solid #282C35;}
-.nav a{display:block; height:50px; line-height:50px; padding:0; text-align:center;}
-.nav a:first-child{border-top:1px solid #424857;}
+.header{width:136px; height:100%;} /*设置头部区域的宽度和高度。*/
+.header .main{position: static; width:auto;} /*调整头部主容器的布局*/
+.logo{top:20px; left:50%; width:86px; height:74px; margin-left:-43px; background:url(../images/my-bbs-logo.png);}/*设置logo的位置、大小和背景图像*/
+.nav{position:relative; left:0; top:110px; border-top:1px solid #282C35;}/*定义导航栏的位置和样式*/
+.nav a{display:block; height:50px; line-height:50px; padding:0; text-align:center;}/*设置导航链接的显示样式*/
+.nav a:first-child{border-top:1px solid #424857;}/*设置导航栏第一个链接的顶部边框*/
+
+/* .nav-user：设置用户导航的布局和位置。
+.nav-user span：调整用户导航中的span元素的外边距。
+.icon-touxiang：设置头像图标的大小。
+.nav-user span, .nav-user .unlogin, .out-login, .avatar, .avatar cite, .nav-user .nav：设置这些元素的显示和对齐方式。
+.nav-user span a：设置span内链接的内边距。
+.nav-user .unlogin：调整未登录状态下的外边距。
+.out-login：设置登出按钮的外边距和内边距。
+.avatar img：设置头像图片的大小。
+.avatar cite：调整头像描述的外边距。
+.avatar i：调整头像图标的外边距。
+.nav-message：设置消息导航的位置。 */
 .nav-user span{margin-top: 10px;}
-
 .icon-touxiang{font-size: 60px;}
-
 .nav-user{top: auto; bottom:20px; left:0; width:100%;}
 .nav-user span, 
 .nav-user .unlogin, 
@@ -31,14 +41,18 @@ html .fly-full{margin-top: 0;}
 .out-login{margin-left:0; margin-top:20px;}
 .out-login a{ padding:0 5px;}
 .nav-user .nav{position:relative; margin-left: 0; margin-top: 15px;}
-
 .avatar img{width:60px; height:60px;}
 .avatar cite{margin-left: 0; margin-top:10px; }
 .avatar i{margin-left: 0;}
-
 .nav-message{left: auto; right: 10px;}
 
 /* 适配 */
+/* @media screen and (max-width: 1024px)：针对最大宽度为1024px的屏幕调整样式。
+调整页面和主容器的外边距。
+隐藏元素（如.edge）。
+@media screen and (max-width: 750px)：针对最大宽度为750px的屏幕调整样式。
+进一步调整页面外边距和头部位置。
+显示元素（如.edge）。 */
 @media screen and (max-width: 1024px) {
   html body{margin-left: 140px;}
   .main{margin: 15px 10px;}

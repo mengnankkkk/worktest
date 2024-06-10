@@ -1,15 +1,6 @@
-/**
- * AJAX Upload ( http://valums.com/ajax-upload/ ) 
- * Copyright (c) Andris Valums
- * Licensed under the MIT license ( http://valums.com/mit-license/ )
- * Thanks to Gary Haran, David Mark, Corey Burns and others for contributions 
- */
 (function () {
-    /* global window */
-    /* jslint browser: true, devel: true, undef: true, nomen: true, bitwise: true, regexp: true, newcap: true, immed: true */
-    
     /**
-     * Wrapper for FireBug's console.log
+     * 用于包装FireBug的console.log，以便于调试
      */
     function log(){
         if (typeof(console) != 'undefined' && typeof(console.log) == 'function'){            
@@ -19,11 +10,12 @@
     } 
 
     /**
-     * Attaches event to a dom element.
+     * 将事件附加到DOM元素上
      * @param {Element} el
-     * @param type event name
-     * @param fn callback This refers to the passed element
+     * @param type 事件的名称
+     * @param fn 调用这个回调函数。
      */
+    //用于给DOM元素添加事件监听器。
     function addEvent(el, type, fn){
         if (el.addEventListener) {
             el.addEventListener(type, fn, false);
@@ -37,13 +29,7 @@
     }   
     
     /**
-     * Attaches resize event to a window, limiting
-     * number of event fired. Fires only when encounteres
-     * delay of 100 after series of events.
-     * 
-     * Some browsers fire event multiple times when resizing
-     * http://www.quirksmode.org/dom/events/resize.html
-     * 
+     * 将resize事件附加到window对象上，并限制事件触发的频率。只有在连续的resize事件后延迟100毫秒才会触发回调函数。
      * @param fn callback This refers to the passed element
      */
     function addResizeEvent(fn){
@@ -193,7 +179,7 @@
      * @return filename
      */  
     function fileFromPath(file){
-        return file.replace(/.*(\/|\\)/, "");
+        return file.replace(/.*([\/\\])/, "");
     }
     
     /**
@@ -288,7 +274,7 @@
             throw new Error("Please make sure that you're passing a valid element"); 
         }
                 
-        if ( button.nodeName.toUpperCase() == 'A'){
+        if ( button.nodeName.toUpperCase() === 'A'){
             // disable link                       
             addEvent(button, 'click', function(e){
                 if (e && e.preventDefault){
@@ -323,7 +309,7 @@
             this._disabled = true;
             
             var nodeName = this._button.nodeName.toUpperCase();            
-            if (nodeName == 'INPUT' || nodeName == 'BUTTON'){
+            if (nodeName === 'INPUT' || nodeName === 'BUTTON'){
                 this._button.setAttribute('disabled', 'disabled');
             }            
             
@@ -552,9 +538,9 @@
             addEvent(iframe, 'load', function(){                
                 
                 if (// For Safari 
-                    iframe.src == "javascript:'%3Chtml%3E%3C/html%3E';" ||
+                    iframe.src === "javascript:'%3Chtml%3E%3C/html%3E';" ||
                     // For FF, IE
-                    iframe.src == "javascript:'<html></html>';"){                                                                        
+                    iframe.src === "javascript:'<html></html>';"){
                         // First time around, do not delete.
                         // We reload to blank page, so that reloading main page
                         // does not re-submit the post.
@@ -572,7 +558,7 @@
                 var doc = iframe.contentDocument ? iframe.contentDocument : window.frames[iframe.id].document;
                 
                 // fixing Opera 9.26,10.00
-                if (doc.readyState && doc.readyState != 'complete') {
+                if (doc.readyState && doc.readyState !== 'complete') {
                    // Opera fires load event multiple times
                    // Even when the DOM is not ready yet
                    // this fix should not affect other browsers
@@ -580,7 +566,7 @@
                 }
                 
                 // fixing Opera 9.64
-                if (doc.body && doc.body.innerHTML == "false") {
+                if (doc.body && doc.body.innerHTML === "false") {
                     // In Opera 9.64 event was fired second time
                     // when body.innerHTML changed from false 
                     // to server response approx. after 1 sec
@@ -596,14 +582,14 @@
                     // response is html document or plain text
                     response = doc.body.innerHTML;
                     
-                    if (settings.responseType && settings.responseType.toLowerCase() == 'json') {
+                    if (settings.responseType && settings.responseType.toLowerCase() === 'json') {
                         // If the document was sent as 'application/javascript' or
                         // 'text/javascript', then the browser wraps the text in a <pre>
                         // tag and performs html encoding on the contents.  In this case,
                         // we need to pull the original text content from the text node's
                         // nodeValue property to retrieve the unmangled content.
                         // Note that IE6 only understands text/html
-                        if (doc.body.firstChild && doc.body.firstChild.nodeName.toUpperCase() == 'PRE') {
+                        if (doc.body.firstChild && doc.body.firstChild.nodeName.toUpperCase() === 'PRE') {
                             response = doc.body.firstChild.firstChild.nodeValue;
                         }
                         

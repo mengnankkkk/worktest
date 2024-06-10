@@ -1,20 +1,27 @@
-/**
- 
- @Name: Fly社区
- @Author: 贤心
- @Site: fly.layui.com
- 
- */
-
 
 /* 全局 */
+/* html,body{overflow-x: hidden;}：这行代码阻止整个HTML文档和body元素的水平滚动。
+html body{margin-top: 61px;}：这行代码为body元素添加了61像素的上边距。
+html{background-color: #F2F2F2;}：这行代码将HTML文档的背景颜色设置为浅灰色（#F2F2F2）。
+i{font-style: normal;}：这行代码确保任何在<i>标签内的文本以正常字体样式显示，而不是默认的斜体样式。*/
 html,body{overflow-x: hidden;}
 html body{margin-top: 61px;}
 html{background-color: #F2F2F2;}
 i{font-style: normal;}
 
 /* 图标 */
-
+/* font-family: "layui-icon-fly";
+定义了字体的名称，可以在CSS中使用这个名字来应用自定义字体。
+src: url('iconfont.eot?t=1512007250695');
+指定.eot文件的路径，这是IE9支持的字体格式。
+src: url('iconfont.eot?t=1512007250695#iefix') format('embedded-opentype'),
+指定.eot文件的路径，并为IE6-IE8提供格式提示。
+url('data:application/x-font-woff;charset=utf-8;base64,Base64编码数据') format('woff'),
+指定基于base64编码的.woff字体数据，现代浏览器普遍支持这种格式。
+url('iconfont.ttf?t=1512007250695') format('truetype'),
+指定.ttf文件的路径，这种格式被许多浏览器支持，包括Chrome、Firefox、Opera、Safari以及Android/iOS 4.2及以上版本。
+url('iconfont.svg?t=1512007250695#iconfont') format('svg');
+指定.svg文件的路径，用于旧版本的iOS（4.1及以下）。 */
 @font-face {font-family: "layui-icon-fly";
   src: url('iconfont.eot?t=1512007250695'); /* IE9*/
   src: url('iconfont.eot?t=1512007250695#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -23,8 +30,14 @@ i{font-style: normal;}
   url('iconfont.svg?t=1512007250695#iconfont') format('svg'); /* iOS 4.1- */
 }
 
+/* font-family: "layui-icon-fly", serif !important;：将字体设置为"layui-icon-fly"。如果该字体不可用，将回退到serif字体。!important声明确保这个规则优先于其他字体族规则。
+font-size:16px;：将字体大小设置为16像素。
+font-style:normal;：将字体样式设置为正常（不是斜体或倾斜）。
+-webkit-font-smoothing: antialiased;：在基于WebKit的浏览器（如Safari和Chrome）中通过抗锯齿处理来改善文本的外观，使字体边缘更平滑。
+-webkit-text-stroke-width: 0.2px;：在基于WebKit的浏览器中应用一个微妙的描边来增强文本的外观。
+-moz-osx-font-smoothing: grayscale;：在macOS上的Firefox中通过灰度抗锯齿来改善文本的外观。 */
 .iconfont {
-  font-family:"layui-icon-fly" !important;
+  font-family: "layui-icon-fly", serif !important;
   font-size:16px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
@@ -32,6 +45,7 @@ i{font-style: normal;}
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*图标字符编码*/
 .icon-zan:before{content:"\e612"}
 .icon-jiazaizhong:before{content:"\e60e"}
 .icon-sousuo:before{content:"\e621"}
@@ -93,7 +107,8 @@ i{font-style: normal;}
 
 /* 辅助 */
 a:hover{color: #009688; transition: all .3s;}
-pre{padding: 10px 15px; margin: 10px 0; font-size: 12px; border-left: 6px solid #009688;  background-color: #f8f8f8; font-family: Courier New; overflow: auto;}
+pre{padding: 10px 15px; margin: 10px 0; font-size: 12px; border-left: 6px solid #009688;  background-color: #f8f8f8;
+  font-family: Courier New, serif; overflow: auto;}
 
 .layui-container{padding: 0;}
 .fly-main{width: 1079px; min-height: 600px; margin: 0 auto 15px;}
@@ -255,7 +270,7 @@ pre{padding: 10px 15px; margin: 10px 0; font-size: 12px; border-left: 6px solid 
 
 /* 单行列表 */
 .fly-list-one .fly-panel-title{margin-bottom: 5px;}
-.fly-list-one dd{margin: 0 15px; line-height: 26px; white-space: nowrap; overflow: hidden; list-style: decimal-leading-zero inside; *list-style-type: decimal inside; color: #009E94;}
+.fly-list-one dd{margin: 0 15px; line-height: 26px; white-space: nowrap; overflow: hidden; list-style-type: decimal-leading-zero; list-style-position: inside; color: #009E94;}
 .fly-list-one dd a,
 .fly-list-one dd span{display: inline-block; *display: inline; *zoom: 1; vertical-align: top; font-style: normal}
 .fly-list-one dd a{max-width: 85%; margin-right: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px;}
@@ -271,7 +286,7 @@ body .layui-edit-face  .layui-layer-content{padding:0; background-color:#fff; co
 
 /* 签到 */
 .fly-signin cite{padding: 0 5px; color: #FF5722; font-style: normal;}
-.fly-signin .layui-badge-dot{top: -7px; margin-left: 0px;}
+.fly-signin .layui-badge-dot{top: -7px; margin-left: 0;}
 .fly-signin-list{padding: 0; line-height: 30px;}
 .fly-signin-list .layui-tab-item{padding: 10px; height: 320px; overflow-x: hidden; overflow-y: auto;}
 .fly-signin-list li{margin-top: 5px; padding-bottom: 5px; border-bottom: 1px dotted #e2e2e2; white-space: nowrap;}
@@ -398,7 +413,7 @@ body .fly-user-main{position: relative; min-height: 600px;}
 .fly-form-app .icon-weibo{color:#E6162D}
 
 .user-tab{margin:20px 0;}
-.user-about{position:relative; padding:0 0 0px 20px; border-left:1px solid #DFDFDF; text-align:center;}
+.user-about{position:relative; padding:0 0 0 20px; border-left:1px solid #DFDFDF; text-align:center;}
 .user-about .user-avatar{width:100px; height:100px; border-radius:100%;}
 .user-about p{line-height:30px;}
 .user-about p span{padding:0 5px; color:#999;}
@@ -489,7 +504,8 @@ body .fly-user-main{position: relative; min-height: 600px;}
 
 /* 广告 */
 .fly-ad{position: relative; background-color: #f2f2f2; overflow:hidden;}
-.fly-ad:before{content: '广告位'; position: absolute; z-index: 0; top: 50%; left: 50%; left: 50%; margin: -10px 0 0 -25px; color: #aaa; font-size: 18px; font-weight: 300;}
+.fly-ad:before{content: '广告位'; position: absolute; z-index: 0; top: 50%; left: 50%;
+  margin: -10px 0 0 -25px; color: #aaa; font-size: 18px; font-weight: 300;}
 .fly-ad div{position: relative; z-index: 1;}
 
 /* 友链 */
