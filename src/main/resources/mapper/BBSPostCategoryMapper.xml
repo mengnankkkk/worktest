@@ -1,7 +1,5 @@
-<!--
-  数据库
--->
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 数据库 -->
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.my.bbs.dao.BBSPostCategoryMapper">
   <resultMap id="BaseResultMap" type="com.my.bbs.entity.BBSPostCategory">

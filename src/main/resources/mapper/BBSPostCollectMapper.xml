@@ -1,7 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   帖子收藏（Post Collection）相关的数据库操作，包括查询、删除等。因此，它最符合帖子管理模块或更具体地说，内容支持模块
 -->
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.my.bbs.dao.BBSPostCollectMapper">
   <resultMap id="BaseResultMap" type="com.my.bbs.entity.BBSPostCollect">

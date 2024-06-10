@@ -25,7 +25,7 @@ import java.util.List;
 //用户管理模块
 @Controller
 public class BBSUserController {
-
+    //类和依赖注入
     @Resource
     private BBSUserService bbsUserService;
 
@@ -38,16 +38,19 @@ public class BBSUserController {
     @Resource
     private BBSPostCommentService bbsPostCommentService;
 
+    //处理登录页面的请求，返回登录页面视图 user/login。
     @GetMapping({"/login", "/login.html"})
     public String loginPage() {
         return "user/login";
     }
 
+    //处理注册页面的请求，返回注册页面视图 user/reg。
     @GetMapping({"/register", "/register.html"})
     public String registerPage() {
         return "user/reg";
     }
 
+    //处理用户中心页面的请求。
     @GetMapping("/userCenter/{userId}")
     public String userCenterPage(HttpServletRequest request, @PathVariable("userId") Long userId) {
         //基本用户信息
@@ -62,12 +65,15 @@ public class BBSUserController {
         //近期回复的内容
         List<RecentCommentListEntity> recentCommentList = bbsPostCommentService.getRecentCommentListByUserId(userId);
 
+        //将这些信息添加到请求属性中，然后返回用户中心页面视图 user/home。
         request.setAttribute("bbsUser", bbsUser);
         request.setAttribute("recentPostList", recentPostList);
         request.setAttribute("recentCommentList", recentCommentList);
         return "user/home";
     }
 
+    //处理用户设置页面的请求。
+    //从会话中获取当前用户信息，并将其添加到请求属性中，然后返回用户设置页面视图 user/set。
     @GetMapping("/userSet")
     public String userSetPage(HttpServletRequest request) {
         BBSUser currentUser = (BBSUser) request.getSession().getAttribute(Constants.USER_SESSION_KEY);
@@ -75,6 +81,7 @@ public class BBSUserController {
         return "user/set";
     }
 
+    //处理个人中心页面的请求。
     @GetMapping("/myCenter")
     public String myCenterPage(HttpServletRequest request) {
 
@@ -95,6 +102,7 @@ public class BBSUserController {
             myCollectBBSPostCount = collectRecords.size();
         }
 
+        //将这些信息添加到请求属性中，然后返回个人中心页面视图 user/index。
         request.setAttribute("myBBSPostList", myBBSPostList);
         request.setAttribute("myBBSPostCount", myBBSPostCount);
         request.setAttribute("collectRecords", collectRecords);
@@ -134,11 +142,9 @@ public class BBSUserController {
         bbsUser.setLocation(location);
         bbsUser.setIntroduce(introduce);
         if (bbsUserService.updateUserInfo(bbsUser, httpSession)) {
-            Result result = ResultGenerator.genSuccessResult();
-            return result;
+            return ResultGenerator.genSuccessResult();
         } else {
-            Result result = ResultGenerator.genFailResult("修改失败");
-            return result;
+            return ResultGenerator.genFailResult("修改失败");
         }
     }
 
@@ -153,11 +159,9 @@ public class BBSUserController {
         BBSUser bbsUser = (BBSUser) httpSession.getAttribute(Constants.USER_SESSION_KEY);
         bbsUser.setHeadImgUrl(userHeadImg);
         if (bbsUserService.updateUserHeadImg(bbsUser, httpSession)) {
-            Result result = ResultGenerator.genSuccessResult();
-            return result;
+            return ResultGenerator.genSuccessResult();
         } else {
-            Result result = ResultGenerator.genFailResult("修改失败");
-            return result;
+            return ResultGenerator.genFailResult("修改失败");
         }
     }
 
@@ -183,6 +187,7 @@ public class BBSUserController {
         httpSession.removeAttribute(Constants.USER_SESSION_KEY);
         return "user/login";
     }
+
 
     @PostMapping("/register")
     @ResponseBody
