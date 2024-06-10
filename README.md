@@ -1,4 +1,4 @@
-﻿﻿![logo](static-files/my-bbs-logo.png)
+﻿﻿﻿﻿﻿![logo](static-files/my-bbs-logo.png)
 
 在一个神秘的世界中，宵宫、玛露希尔、东山小红、阿尔图罗、川井璃夏和维什戴尔等来自不同领域的勇士们相遇了。他们被命运之手引导，踏上了一场跨越欧陆风云4中的大明以及其他领域的奇幻冒险之旅。
 
@@ -22,29 +22,29 @@
 mengnankkkk：
 
     数据库   
-
+    
     github管理模块
-
+    
     blog 
-
+    
     安全 
 
 Margit-Arachne：
 
     前端   
-
+    
     用户管理模块   
-
+    
     编码crypot模块  
 
 yaoplayer：
 
     帖子post模块   
-
+    
     帖子管理模块  
-
+    
     内容支持模块   
-
+    
     创意模块   
 
 博客地址：https://mengnankk.top/
@@ -56,7 +56,8 @@ Xcheck检测链接：https://xcheck.tencent.com/taskshare/78c8be97-ace0-429a-8ef
 演示视频地址：
 
 主要功能截图：
->>>>>>> 45e35ced5f1540fd5c5503c4f97ba0849340333d
+
+[img-7eg.pages.dev](https://img-7eg.pages.dev/img/105627302_p0_master1200.jpg)
 
 
 
