@@ -1,4 +1,4 @@
-﻿﻿﻿![logo](static-files/my-bbs-logo.png)
+﻿﻿﻿﻿﻿![logo](static-files/my-bbs-logo.png)
 
 在一个神秘的世界中，宵宫、玛露希尔、东山小红、阿尔图罗、川井璃夏和维什戴尔等来自不同领域的勇士们相遇了。他们被命运之手引导，踏上了一场跨越欧陆风云4中的大明以及其他领域的奇幻冒险之旅。
 
@@ -57,7 +57,7 @@ Xcheck检测链接：https://xcheck.tencent.com/taskshare/78c8be97-ace0-429a-8ef
 
 主要功能截图：
 
-https://github.com/mengnankkkk/img/blob/main/105627302_p0_master1200.jpg
+[img-7eg.pages.dev](https://img-7eg.pages.dev/img/105627302_p0_master1200.jpg)
 
 
 
