@@ -234,35 +234,12 @@
                     </th:block>
                 </th:block>
             </dl>
-
-            <div class="fly-panel">
-                <div class="fly-panel-title">
-                    我的公众号
-                </div>
-                <div class="fly-panel-main">
-                    <a href="https://juejin.im/user/59199e22a22b9d0058279886" target="_blank">
-                        <img style="max-width: 100%;" th:src="@{/images/my-gzh-qrcode.jpg}">
-                    </a>
-                </div>
-            </div>
-
-            <div class="fly-panel">
-                <div class="fly-panel-title">
-                    我的新书
-                </div>
-                <div class="fly-panel-main">
-                    <a href="https://item.jd.com/12890115.html" target="_blank">
-                        <img style="max-width: 100%;" th:src="@{/images/my-book01.png}">
-                    </a>
-                </div>
-            </div>
-
         </div>
     </div>
 </div>
 
 <div class="fly-footer">
-    <p>My-BBS社区 2021 &copy; <a href="https://github.com/ZHENFENG13/My-BBS" target="_blank">十三</a></p>
+    <p>社区讨论 2024 &copy; <a href="https://github.com/mengnankkkk/worktest/discussions" target="_blank">礼仪小姐</a></p>
 </div>
 
 <script th:src="@{/layui/layui.js}"></script>
@@ -383,7 +360,7 @@
                 type: 'POST',//方法类型
                 url: '/delCollect/' + postId,
                 success: function (result) {
-                    if (result.resultCode == 200) {
+                    if (result.resultCode === 200) {
                         layer.confirm('取消收藏成功!将刷新本页面...', {
                             icon: 3,
                             skin: 'layui-layer-molv',
@@ -395,7 +372,7 @@
                     } else {
                         layer.msg(result.message);
                     }
-                    ;
+
                 },
                 error: function () {
                     layer.alert('操作失败!', {title: '提醒', skin: 'layui-layer-molv', icon: 2});

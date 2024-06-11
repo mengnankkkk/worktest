@@ -10,8 +10,8 @@
         <!-- 数据库连接配置 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                 connectionURL="jdbc:mysql://localhost:3306/my_bbs_db?serverTimezone=UTC"
-                userId="mengnankk"
-                password="Zyk2215290444">
+                userId="Margit"
+                password="8750613a">
         </jdbcConnection>
 
 
