@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+//显示帖子的详细信息页，并允许用户查看帖子、查看评论、发表评论等功能
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="header::head-fragment('帖子详情')">
 </head>
@@ -31,7 +32,7 @@
     <div class="layui-row layui-col-space15">
         <div class="layui-col-md8 content detail">
             <div class="fly-panel detail-box">
-                <h1 th:text="${bbsPost.postTitle}">My-BBs开源啦</h1>
+                <h1 th:text="${bbsPost.postTitle}">mengnankkkk开源啦</h1>
                 <div class="fly-detail-info">
                     <div>
                         <a class="layui-btn layui-btn-xs jie-admin"
@@ -49,7 +50,7 @@
                     </a>
                     <div class="fly-detail-user">
                         <a th:href="@{${'/userCenter/'+bbsUser.userId}}" class="fly-link">
-                            <cite th:text="${bbsUser.nickName}">程序员十三</cite>
+                            <cite th:text="${bbsUser.nickName}">礼仪小姐</cite>
                             <span>
                               <th:block th:if="${bbsUser.userStatus==0}">账号正常
                               </th:block>
@@ -227,7 +228,7 @@
                     <th:block th:each="bbsEntity : ${hotTopicBBSPostList}">
                         <dd>
                             <a th:href="@{'/detail/'+${bbsEntity.postId}}"
-                               th:text="${bbsEntity.postTitle}">My-BBS开源啦</a>
+                               th:text="${bbsEntity.postTitle}">mengnankkkk开源啦</a>
                             <span><i class="iconfont icon-pinglun1"></i> <th:block
                                     th:text="${bbsEntity.postComments}"></th:block></span>
                         </dd>
@@ -279,7 +280,7 @@
                 url: url,
                 data: params,
                 success: function (result) {
-                    if (result.resultCode == 200) {
+                    if (result.resultCode === 200) {
                         layer.confirm('评论成功!将刷新本页面...', {
                             icon: 3,
                             skin: 'layui-layer-molv',
@@ -306,7 +307,7 @@
                 type: 'POST',//方法类型
                 url: '/delReply/' + commentId,
                 success: function (result) {
-                    if (result.resultCode == 200) {
+                    if (result.resultCode === 200) {
                         layer.confirm('删除成功!将刷新本页面...', {
                             icon: 3,
                             skin: 'layui-layer-molv',
@@ -333,7 +334,7 @@
                 type: 'POST',//方法类型
                 url: '/addCollect/' + postId,
                 success: function (result) {
-                    if (result.resultCode == 200) {
+                    if (result.resultCode === 200) {
                         layer.confirm('收藏成功!将刷新本页面...', {
                             icon: 3,
                             skin: 'layui-layer-molv',

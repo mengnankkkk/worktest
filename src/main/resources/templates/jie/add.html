@@ -1,10 +1,25 @@
 <!DOCTYPE html>
+//创建一个允许用户发布新帖的网页。它结合了Thymeleaf、LayUI和WangEditor等技术和框架。
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="header::head-fragment('发布帖子')">
 </head>
 <body>
 <div th:replace="header::header-fragment"></div>
-
+/*1. 头部和页脚：
+头部: 通过Thymeleaf th:replace引入。
+页脚: 包含静态HTML内容，并带有指向GitHub讨论页面的链接。
+2. 帖子表单：
+标题输入: 一个必填的文本输入框，用于输入帖子的标题。
+分类选择: 使用Thymeleaf填充分类的下拉菜单。
+内容编辑器: 一个用于WangEditor富文本编辑器的div。
+验证码: 一个验证码输入框和刷新验证码的图片。
+提交按钮: 点击后触发addBBSPost函数。
+3. WangEditor集成：
+初始化和配置: 配置编辑器的高度、图片上传设置和处理上传事件的钩子。
+创建编辑器: 创建编辑器实例。
+4. 表单提交：
+验证: 检查标题是否为空、验证码长度是否正确、是否选择分类和内容长度是否有效。
+AJAX请求: 通过AJAX POST请求提交表单数据，并处理响应。*/
 <div class="layui-container fly-marginTop">
     <div class="fly-panel" pad20 style="padding-top: 5px;">
         <!--<div class="fly-none">没有权限</div>-->
