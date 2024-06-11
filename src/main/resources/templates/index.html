@@ -68,11 +68,11 @@
                                     <a href="##" class="layui-badge"
                                        th:text="${bbsPostListEntity.postCategoryName}">分享</a>
                                     <a th:href="@{${'/detail/'+bbsPostListEntity.postId}}"
-                                       th:text="${bbsPostListEntity.postTitle}">My-BBS开源啦</a>
+                                       th:text="${bbsPostListEntity.postTitle}">mengnankkkk开源啦</a>
                                 </h2>
                                 <div class="fly-list-info">
                                     <a th:href="@{${'/userCenter/'+bbsPostListEntity.publishUserId}}" link>
-                                        <cite th:text="${bbsPostListEntity.nickName}">程序员十三</cite>
+                                        <cite th:text="${bbsPostListEntity.nickName}">礼仪小姐</cite>
                                     </a>
                                     <span th:text="${#dates.format(bbsPostListEntity.createTime, 'yyyy-MM-dd HH:mm:ss')}">刚刚</span>
                                     <span class="fly-list-kiss layui-hide-xs" title="赞"><i
@@ -161,7 +161,7 @@
                 <th:block th:unless="${#lists.isEmpty(hotTopicBBSPostList)}">
                     <th:block th:each="bbsEntity : ${hotTopicBBSPostList}">
                         <dd>
-                            <a th:href="@{'/detail/'+${bbsEntity.postId}}" th:text="${bbsEntity.postTitle}">My-BBS开源啦</a>
+                            <a th:href="@{'/detail/'+${bbsEntity.postId}}" th:text="${bbsEntity.postTitle}">mengnankkkk开源啦</a>
                             <span><i class="iconfont icon-pinglun1"></i> <th:block
                                     th:text="${bbsEntity.postComments}"></th:block></span>
                         </dd>
@@ -210,8 +210,6 @@
                     <dd><a href="https://github.com/mengnankkkk" target="_blank">mengnankk</a>
                     <dd>
                     <dd><a href="https://github.com/Margit-Arachne" target="_blank">Magit</a>
-                    <dd>
-                    <dd><a href="https://www.52pojie.cn/forum.php" target="_blank">52论坛</a>
                     <dd>
                     <dd><a href="https://mengnankk.top/" target="_blank">blog.site</a>
                     <dd>

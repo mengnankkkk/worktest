@@ -45,8 +45,8 @@
           <ul class="mine-view jie-row">
             <th:block th:each="bbsPost : ${myBBSPostList}">
             <li>
-              <a class="jie-title" th:href="@{${'/detail/'+bbsPost.postId}}" target="_blank" th:text="${bbsPost.postTitle}">My-BBS开源啦</a>
-              <i th:text="${#dates.format(bbsPost.createTime, 'yyyy/MM/dd HH:mm:ss')}">2021/08/01</i>
+              <a class="jie-title" th:href="@{${'/detail/'+bbsPost.postId}}" target="_blank" th:text="${bbsPost.postTitle}">mengnankkkk开源啦</a>
+              <i th:text="${#dates.format(bbsPost.createTime, 'yyyy/MM/dd HH:mm:ss')}">2024/06/01</i>
               <a class="mine-edit" th:href="@{${'/editPostPage/'+bbsPost.postId}}">编辑</a>
               <a class="mine-del" href="##" th:onclick="'delPost('+${bbsPost.postId}+')'">删除</a>
               <em><th:block th:text="${bbsPost.postViews}"></th:block>阅/<th:block th:text="${bbsPost.postComments}"></th:block>答</em>
@@ -67,7 +67,7 @@
             <ul class="mine-view jie-row">
               <th:block th:each="bbsPost : ${collectRecords}">
                 <li>
-                  <a class="jie-title" th:href="@{${'/detail/'+bbsPost.postId}}" target="_blank" th:text="${bbsPost.postTitle}">My-BBS开源啦</a>
+                  <a class="jie-title" th:href="@{${'/detail/'+bbsPost.postId}}" target="_blank" th:text="${bbsPost.postTitle}">memgnankkkk开源啦</a>
                   <em><th:block th:text="${bbsPost.postCollects}"></th:block>收藏</em>
                 </li>
               </th:block>
@@ -81,7 +81,7 @@
 </div>
 
 <div class="fly-footer">
-  <p>My-BBS社区 2021 &copy; <a href="https://github.com/ZHENFENG13/My-BBS" target="_blank">十三</a></p>
+  <p>社区讨论 2024 &copy; <a href="https://github.com/mengnankkkk/worktest/discussions" target="_blank">礼仪小姐</a></p>
 </div>
 
 <script th:src="@{/layui/layui.js}"></script>

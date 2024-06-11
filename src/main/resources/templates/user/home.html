@@ -9,7 +9,7 @@
 <div class="fly-home fly-panel">
     <img th:src="@{${bbsUser.headImgUrl}}" th:alt="${bbsUser.nickName}">
     <h1>
-        <th:block th:text="${bbsUser.nickName}">程序员十三</th:block>
+        <th:block th:text="${bbsUser.nickName}">礼仪小姐</th:block>
         <th:block th:if="${bbsUser.gender=='男'}">
             <i class="iconfont icon-nan"></i>
         </th:block>
@@ -29,7 +29,7 @@
         </th:block>
         </span>
         <i class="iconfont icon-shijian"></i><span th:text="${#dates.format(bbsUser.createTime, 'yyyy-MM-dd')+' 加入'}"/>
-        <i class="iconfont icon-chengshi"></i><span th:text="${bbsUser.location}">来自杭州</span>
+        <i class="iconfont icon-chengshi"></i><span th:text="${bbsUser.location}">来自山东</span>
     </p>
 
     <p class="fly-home-sign" th:text="${bbsUser.introduce}">我不怕千万人阻挡，只怕自己投降</p>
@@ -49,8 +49,8 @@
                         <th:block th:each="bbsPost : ${recentPostList}">
                             <li>
                                 <a th:href="@{${'/detail/'+bbsPost.postId}}"
-                                   th:text="${bbsPost.postTitle}">My-BBS开源啦</a>
-                                <i th:text="${#dates.format(bbsPost.createTime, 'yyyy/MM/dd HH:mm:ss')}">2021/08/01</i>
+                                   th:text="${bbsPost.postTitle}">mengnankkkk开源啦</a>
+                                <i th:text="${#dates.format(bbsPost.createTime, 'yyyy/MM/dd HH:mm:ss')}">2024/06/01</i>
                                 <em class="layui-hide-xs">
                                     <th:block th:text="${bbsPost.postViews}"></th:block>
                                     阅/
@@ -73,7 +73,7 @@
         <div class="layui-col-md6 fly-home-da">
             <div class="fly-panel">
                 <h3 class="fly-panel-title">
-                    <th:block th:text="${bbsUser.nickName}">程序员十三</th:block>
+                    <th:block th:text="${bbsUser.nickName}">礼仪小姐</th:block>
                     最近的评论
                 </h3>
                 <ul class="home-jieda">
@@ -88,7 +88,7 @@
                                 <p>
                                     <span th:text="${#dates.format(recentComment.commentCreateTime, 'yyyy/MM/dd HH:mm:ss')}">1分钟前</span>
                                     在<a th:href="@{${'/detail/'+recentComment.postId}}"
-                                        th:text="${recentComment.postTitle}" target="_blank">My-BBS开源啦</a>中评论：
+                                        th:text="${recentComment.postTitle}" target="_blank">mengnankkkk开源啦</a>中评论：
                                 </p>
                                 <div class="home-dacontent" th:text="${recentComment.commentBody}">
                                 </div>
@@ -102,7 +102,7 @@
 </div>
 
 <div class="fly-footer">
-    <p>My-BBS社区 2021 &copy; <a href="https://github.com/ZHENFENG13/My-BBS" target="_blank">十三</a></p>
+    <p>社区讨论 2024 &copy; <a href="https://github.com/mengnankkkk/worktest/discussions" target="_blank">礼仪小姐</a></p>
 </div>
 
 <script th:src="@{/layui/layui.js}"></script>
