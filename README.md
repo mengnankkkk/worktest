@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿![logo](static-files/my-bbs-logo.png)
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿![logo](static-files/my-bbs-logo.png)
 
 在一个神秘的世界中，宵宫、玛露希尔、东山小红、阿尔图罗、川井璃夏和维什戴尔等来自不同领域的勇士们相遇了。他们被命运之手引导，踏上了一场跨越欧陆风云4中的大明以及其他领域的奇幻冒险之旅。
 
@@ -51,13 +51,18 @@ yaoplayer：
 =======
 项目博客地址：https://mengnankk.top/2024/06/06/webbbs/
 
+​                                                （博客炸了已经重置）
+
 Xcheck检测链接：https://xcheck.tencent.com/taskshare/78c8be97-ace0-429a-8eff-444567691d36
 
-演示视频地址：
+演示视频地址：https://www.bilibili.com/video/BV11f421X7V9/?spm_id_from=333.999.0.0&vd_source=d48d6e71a28ed915dc2c84a9191a06bd
 
-主要功能截图：
+git提交：
 
-[img-7eg.pages.dev](https://img-7eg.pages.dev/img/105627302_p0_master1200.jpg)
+![](https://skymirror-1322372781.cos.ap-beijing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240611164316.png)
 
+![](https://skymirror-1322372781.cos.ap-beijing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240611164324.png)
 
+![](https://skymirror-1322372781.cos.ap-beijing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240611164327.png)
 
+![](https://skymirror-1322372781.cos.ap-beijing.myqcloud.com/110229539_p0_square1200.jpg)

@@ -117,4 +117,8 @@ public class UploadController {
         return resultSuccess;
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 902fc1b54aa426a9859e6bdf268f076a1d02cff2
