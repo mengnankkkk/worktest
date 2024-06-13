@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿![logo](static-files/my-bbs-logo.png)
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿![logo](static-files/my-bbs-logo.png)
 
 在一个神秘的世界中，宵宫、玛露希尔、东山小红、阿尔图罗、川井璃夏和维什戴尔等来自不同领域的勇士们相遇了。他们被命运之手引导，踏上了一场跨越欧陆风云4中的大明以及其他领域的奇幻冒险之旅。
 
@@ -49,7 +49,7 @@ yaoplayer：
 
 博客地址：https://mengnankk.top/
 =======
-项目博客地址：https://mengnankk.top/2024/06/06/webbbs/
+项目博客地址：http://mengnankk.asia/2024/06/06/webbbs/
 
 ​                                                （博客炸了已经重置）
 
