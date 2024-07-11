@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿![logo](static-files/my-bbs-logo.png)
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿![logo](static-files/my-bbs-logo.png)
 
 在一个神秘的世界中，宵宫、玛露希尔、东山小红、阿尔图罗、川井璃夏和维什戴尔等来自不同领域的勇士们相遇了。他们被命运之手引导，踏上了一场跨越欧陆风云4中的大明以及其他领域的奇幻冒险之旅。
 
@@ -66,3 +66,5 @@ git提交：
 ![](https://skymirror-1322372781.cos.ap-beijing.myqcloud.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240611164327.png)
 
 ![](https://skymirror-1322372781.cos.ap-beijing.myqcloud.com/110229539_p0_square1200.jpg)
+
+[![星空历史图](https://api.star-history.com/svg?repos=mengnankkkk/worktest&type=Date)](https://star-history.com/#imsyy/home&Date)
